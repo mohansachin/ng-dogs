@@ -1,0 +1,24 @@
+:host {
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 8px;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.dogCcard {
+    margin-right: 8px;
+}
+
+.dogImage {
+    width: 245px;
+    height: 175px;
+    border-radius: 25px;
+    border: 2px solid white;
+}

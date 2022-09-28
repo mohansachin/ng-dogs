@@ -1,0 +1,13 @@
+<mat-chip-list aria-label="Dog selection" *ngIf="subBreeds?.length > 0" [multiple]="true" [selectable]="true"
+    style="margin-bottom: 10px;">
+    <mat-chip *ngFor="let breed of subBreeds" [selectable]="true" (click)="loadImagesForSubBreed(breed)">
+        {{breed}}
+    </mat-chip>
+</mat-chip-list>
+<ng-container *ngIf="images?.length > 0">
+    <div class="imageContainer">
+        <div class="dogCcard" *ngFor="let image of images">
+            <img mat-card-image src="{{image}}" class="dogImage">
+        </div>
+    </div>
+</ng-container>
